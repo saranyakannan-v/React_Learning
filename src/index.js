@@ -262,7 +262,7 @@ console.log(newNumber); */
 
 //************* FIND *************
 
- let numbers = [3,9,2,48,5];
+// let numbers = [3,9,2,48,5];
 
 // 1. Find - find the first item that matches from an array
 
@@ -272,10 +272,29 @@ console.log(newNumber); */
 
 // 2. findIndex - find the index of the first items that matches.
 
- const newNumber = numbers.findIndex(function(num){
+/* const newNumber = numbers.findIndex(function(num){
     return num > 10 ;
 })
 
-console.log(newNumber); 
+console.log(newNumber); */
 
 
+//******************************** 12. Javascript ES6 Arrow function ***************************
+
+ let numbers = [3,9,2,48,5];
+
+// const newNumber = numbers.map( x => x * x)
+
+// const newNumber = numbers.map(x => x * 2)
+
+// const newNumber = numbers.filter(num => num < 10 );
+
+/* const newNumber = numbers.reduce((accumulator, currentNumber) => {
+    return accumulator += currentNumber;
+}) */
+
+// const newNumber = numbers.find(num => num > 10 )
+
+const newNumber = numbers.findIndex(num => num > 10 )
+
+ console.log(newNumber);
