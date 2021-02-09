@@ -184,8 +184,98 @@ ReactDOM.render(
 
 //******* 10. React Props Practice *******
 
-import App from "./components/App";
+/*import App from "./components/App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));*/
+
+//******************************** 11. Javascript ES6 Map/Filter/Reduce ***************************
+
+//************* MAP *************
+// let numbers = [3,9,2,48,5];
+
+// 1. Map - Create a new array by doing something with each item in an array
+
+/* function double(x){
+    return x * 2;
+}
+const newNumbers = numbers.map(double) */
+
+// 2. using Foreach
+
+/* let newNumbers = [];
+
+numbers.forEach(function (x){
+    newNumbers.push(x * 2);
+});*/
+
+// 3. using map in simple way
+
+/* const newNumbers = numbers.map(function (x){
+    return x * 2;
+})
+
+console.log(newNumbers)*/
+
+//************* FILTER *************
+
+// let numbers = [3,9,2,48,5];
+
+// 1. Filter - Creates a new array by keeping only the items that returns true
+
+/* const newNumbers = numbers.filter(function(num){
+    return num < 10;
+}); */
+
+// 2. using forEach
+
+/* let newNumbers = [];
+
+numbers.forEach(function(num){
+    if(num<10){
+        newNumbers.push(num);
+    }
+});
+
+console.log(newNumbers);*/
+
+//************* REDUCE *************
+
+// let numbers = [3,9,2,48,5];
+
+// 1. Reduce - Accumulate a value by doing something to each item in an array.
+
+/* const newNumber = numbers.reduce(function(accumulator, currentNumber){
+    return accumulator += currentNumber;
+})
+
+console.log(newNumber); */
+
+// 2. using forEach
+
+/* let newNumber = 0;
+
+numbers.forEach(function (currentNumber){
+    newNumber += currentNumber;
+})
+
+console.log(newNumber); */
+
+//************* FIND *************
+
+ let numbers = [3,9,2,48,5];
+
+// 1. Find - find the first item that matches from an array
+
+/* const newNumber = numbers.find(function(num){
+    return num > 10 ;
+}) */
+
+// 2. findIndex - find the index of the first items that matches.
+
+ const newNumber = numbers.findIndex(function(num){
+    return num > 10 ;
+})
+
+console.log(newNumber); 
 
 
